@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "a4d17fa3-73cb-461d-b58e-475855559fb4",
+		"name": "HumanMotionImitation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CheckAPI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOutput",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "projectType",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "frontImg",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "backImg",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "backgroundImg",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "videoLink",
+							"value": "\" \"",
+							"type": "text"
+						},
+						{
+							"key": "videoFile",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "startTime",
+							"value": "-1",
+							"type": "text"
+						},
+						{
+							"key": "endTime",
+							"value": "-1",
+							"type": "text"
+						},
+						{
+							"key": "poseFactor",
+							"value": "300",
+							"type": "text"
+						},
+						{
+							"key": "camFactor",
+							"value": "150",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/GetOutput",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"GetOutput"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
